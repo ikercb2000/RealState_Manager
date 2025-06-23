@@ -1,6 +1,6 @@
 # Project Modules
 
-from src.data_feeds.interfaces import DataFeedInterface
+from src.data_providers.interfaces import DataFeedInterface
 
 # Packages
 
