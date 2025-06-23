@@ -1,9 +1,9 @@
 # Project Modules
 
-from src.data_feeds.interfaces import DataFeedInterface
-from src.data_feeds.real_estate_market.rightmove_UK.enums import *
-from src.data_feeds.real_estate_market.rightmove_UK.utils import RightmoveURL
-from src.data_feeds.real_estate_market.rightmove_UK.scrapper import rightmove_data
+from src.data_providers.interfaces import DataFeedInterface
+from src.data_providers.real_estate_market.rightmove_UK.enums import *
+from src.data_providers.real_estate_market.rightmove_UK.utils import RightmoveURL
+from src.data_providers.real_estate_market.rightmove_UK.scrapper import rightmove_data
 
 # Packages
 

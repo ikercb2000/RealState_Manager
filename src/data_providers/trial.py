@@ -1,8 +1,8 @@
 # Project Modules
 
-from src.data_feeds.real_estate_market.rightmove_UK.data_class import RightmoveDataFeed
-from src.data_feeds.real_estate_market.rightmove_UK.enums import *
-from src.data_feeds.enums import *
+from src.data_providers.real_estate_market.rightmove_UK.data_class import RightmoveDataFeed
+from src.data_providers.real_estate_market.rightmove_UK.enums import *
+from src.data_providers.enums import *
 
 # Packages
 
@@ -18,4 +18,4 @@ data = rm.fetch_data(sale_or_rent.Rent, cities.London, radius.Five, property_typ
 print(data)
 
 rm.export_data(data, file_type=file_types.CSV,
-               file_name="data_rightmove_UK", location_path=os.getcwd())
+               file_name="data_rightmove_UK", location_path=f"{os.getcwd()}/exported_data")
