@@ -1,6 +1,6 @@
 # Project Modules
 
-from src.data_feeds.enums import cities, file_types
+from src.data_providers.enums import cities, file_types
 
 # Packages
 

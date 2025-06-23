@@ -1,7 +1,7 @@
 # Project Modules
 
-from src.data_feeds.real_estate_market.rightmove_UK.enums import cities, property_types, added_to_site, sale_or_rent, radius, bedrooms
-from src.data_feeds.real_estate_market.rightmove_UK.dicts import city_ids
+from src.data_providers.real_estate_market.rightmove_UK.enums import cities, property_types, added_to_site, sale_or_rent, radius, bedrooms
+from src.data_providers.real_estate_market.rightmove_UK.dicts import UK_cities_ids
 
 # Rightmove URLs Auxiliary Class
 
@@ -60,7 +60,7 @@ class RightmoveURL:
         params = {
             "searchLocation": city._name_,
             "useLocationIdentifier": "true",
-            "locationIdentifier": f"REGION%{city_ids[city]}",
+            "locationIdentifier": f"REGION%{UK_cities_ids[city]}",
             "buy": "For+sale" if action == sale_or_rent.Sale else None,
             "rent": "To+rent" if action == sale_or_rent.Rent else None,
             "radius": RightmoveURL.radius_url(rad),
